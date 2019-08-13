@@ -1,0 +1,913 @@
+Font-family*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('../fonts/TrajanPro-Regular.woff2') format('woff2'),
+        url('../fonts/TrajanPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('../fonts/TrajanPro-Bold.woff2') format('woff2'),
+        url('../fonts/TrajanPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+/*custom-css*/
+body {  background: #160036; font-family: 'Trajan Pro';}
+a{transition: 1s;}
+a:focus, a:hover {  text-decoration: none;}
+.psychward-vertical-middle {    display: flex;  flex-wrap: wrap;    align-items: center;}
+.psychward-header-logo img { width: 100%;}
+.psychward-banner { width: 100%;    display: block; background: url(../images/slider-bg.png);   background-size: cover; background-position: center center; padding-top:150px;}
+.psychward-header { width: 100%;    display: block; position: absolute; left: 0;    right: 0;   padding-top: 15px;}
+.psychward-navbar-btn { display: flex;  align-items: center;    justify-content: flex-end;  width: 100%;}
+.psychward-navbar ul {  padding: 0; margin-bottom: 0;   list-style: none;}
+.psychward-navbar ul li {   float: left;    padding: 0 15px;}
+.psychward-navbar ul li a { font-size: 13px;line-height: 15px;  color: #fff;text-transform: uppercase;  font-weight: bold;}
+.psychward-navbar ul li a:hover, .psychward-navbar ul li a:focus{color:rgba(255, 255, 255, 0.5);}
+.psychward-slide-img {  width: 100%;    display: inline-block;}
+.psychward-slide-img img {  width: 100%;    position: relative; left: -50px;}
+.psychward-slide-detail h3 {    margin-top: 0;  color: #fff;    font-size: 18px;    line-height: 20px;  text-transform: uppercase;  font-weight: normal;    margin-bottom: 0px;}
+.psychward-slide-detail h2 {    font-size: 220px;   font-weight: bold;  color: rgba(255, 255, 255, 0.3);    -webkit-text-stroke: 5px #fff;  line-height: 269px; margin-top: 0;margin-bottom: 0px;}
+.psychward-slide-detail p { font-size: 15px;    line-height: 22px;  color: #fff;    text-transform: uppercase;  font-weight: normal;}
+.psychward-slide-detail {   width: 100%;    display: inline-block;  max-width: 400px;}
+.psychward-slide-detail a { font-size: 18px;    line-height: 20px;  text-transform: uppercase;  font-weight: normal;    display: inline-block;  padding: 16px 32px; border: 1px solid #fff; border-radius: 2px; color: #fff;    margin-top: 30px;   background: linear-gradient(to right, #590688, #7e0080);}
+.psychward-slide-detail a:hover, .psychward-slide-detail a:focus {background:transparent;}
+.psychward-banner .slick-arrow {    display: none !important;}
+.psychward-banner .slick-dots li button {   width: 10px;    height: 10px;   background: rgba(255, 255, 255, 0.3);   border-radius: 100%;}
+.psychward-banner .slick-dots li {  width: 10px;    height: 10px;}
+.slick-dots li.slick-active button {    background: #fff;}
+.psychward-steps {  width: 100%;    display: inline-block;}
+.psychward-steps-block {  background-size: 100% 100%;  width: 33.333%; float: left;    text-align: center; background: url(../images/steps-bg.jpg);    padding: 71px 20px; background-repeat: no-repeat;}
+.psychward-steps-detail h2 {    font-size: 50px;    line-height: 52px;  color: #fff;    font-weight: bold;  margin-top: 0;  margin-bottom: 5px;}
+.psychward-steps-detail h3 {    font-size: 31px;    line-height: 33px;  color: #fff;    text-transform: uppercase;  font-weight: bold;  margin: 0;  display: inline-block;}
+.psychward-steps-detail p { font-size: 14px;    line-height: 22px;  color: #fff;    font-weight: 300;   margin-bottom: 0;font-family: 'Open Sans', sans-serif;}
+.psychward-section1 {   width: 100%;    display: block;}
+.psychward-section-title {  width: 100%;    display: inline-block;  text-align: center;}
+.psychward-section-title h2 {   text-transform: uppercase;  color: rgba(255, 255, 255, 0);  font-size: 45px;    line-height: 47px;  -webkit-text-stroke: 1px #fff;  margin-top: 0;  background: url(../images/title-bg.png);    background-repeat: no-repeat;   background-position: center bottom; padding-bottom: 30px;   margin-bottom: 40px;}
+.psychward-section-subtitle {   width: 100%;    display: inline-block;}
+.psychward-section-subtitle h3 {    margin-top: 0;  text-transform: uppercase;  color: #fff;    font-weight: bold;  font-size: 28px;    line-height: 30px;  background: url(../images/subtitle-bg.png); text-align: left;   background-repeat: no-repeat;   background-position: left bottom;   padding-bottom: 10px;   margin-bottom: 30px;}
+.psychward-countdown {  width: 100%;    display: block; background: linear-gradient(#800080, #400366);  padding: 30px;  border-radius: 2px; border: 1px solid rgba(255, 255, 255, 0.5);}
+.psychward-count-detail {   width: 100%;    display: inline-block;  text-align: center;}
+.psychward-count-img {  width: 148px;   border-radius: 100%;    height: 148px;  margin: 0 auto; padding: 10px;  background: rgba(255, 255, 255, 0.3);   border: 2px solid #fff;}
+.psychward-count-img img {  width: 100%;    border-radius: 100%;}
+.psychward-count-detail h3 {    font-size: 25px;    line-height: 27px;  color: #fff;    text-transform: uppercase;  font-weight: bold;  margin-top: 18px;   margin-bottom: 5px;}
+.psychward-count-detail p { font-size: 16px;    line-height: 18px;  color: #fff;    text-transform: uppercase;  font-weight: normal;}
+.psychward-count-clock {    width: 100%;    display: inline-block;  text-align: center;}
+.psychward-count-vs {   width: 123px;   height: 123px;  text-align: center; display: flex;  margin: 0 auto; justify-content: center;    align-items: center;    border: 1px solid #fff; border-radius: 100%;    padding: 10px;}
+.psychward-count-vs-border {    width: 100%;    display: flex;  height: 100%;   border-radius: 100%;    border: 1px solid #fff; justify-content: center;    align-items: center;    padding: 10px;}
+.psychward-count-vs-detail {    width: 100%;    display: flex;  align-items: center;    justify-content: center;    background: #fff;   height: 100%;   border-radius: 100%;    font-size: 42px;    line-height: 44px;  font-weight: bold;  color: #7e007f;}
+.psychward-count-title h3 { color: #fff;    font-size: 18px;    line-height: 20px;  font-weight: bold;  margin-bottom: 24px;}
+.psychward-count-timer #clockdiv{   font-family: sans-serif;    color: #fff;    
+    display: inline-block;  font-weight: 100;   text-align: center; font-size: 18px;}
+.psychward-count-timer #clockdiv > div {    padding: 0; display: inline-block;}
+.psychward-count-timer #clockdiv div > span {   padding: 0; background: #fff;   display: inline-block;  color: #7e007f; font-size: 25px;    line-height: 50px;  font-weight: bold;  width: 50px;}
+.psychward-count-timer .smalltext { padding-top: 10px;  font-size: 11px;    line-height: 13px;  font-weight: bold;  text-transform: uppercase;}
+.psychward-match-tabs .tab {    overflow: hidden;   border-bottom: 1px solid rgba(255, 255, 255, 0.5);  background: linear-gradient(#800080, #400366);  display: flex;  justify-content: space-between; width: 100%;flex-wrap: wrap;}
+.psychward-match-tabs .tab button {background-color: inherit;float: left;border: none; outline: none; cursor: pointer; padding: 14px 9px; transition: 0.3s; font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Trajan Pro';
+    font-weight: bold;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.psychward-match-tabs .tab button.active {  color: rgba(255, 255, 255, 0.5);}
+.psychward-match-tabs .tabcontent {  display: none; }
+.psychward-mt-content ul {  padding-left: 0;    list-style: none; margin-bottom: 0;}
+.psychward-mt-content ul li {   display: flex;  align-items: center;    justify-content: space-between; padding: 15px;  width: 100%;    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);}
+.psychward-match-tabs { width: 100%;    display: inline-block;  border: 1px solid rgba(255, 255, 255, 0.5); background: linear-gradient(#800080, #400366);}
+.psychward-match-tabs .tab button:last-child {  border-right: none;}
+.psychward-mt-content h3 {  margin: 0;  color: #fff;    font-weight: bold;  font-size: 18px;    line-height: 20px;  text-transform: uppercase;}
+.psychward-mt-vs1 img { border-radius: 100%;    border: 1px solid #fff;}
+.psychward-mt-vs-slash {    color: #fff;    font-size: 18px;    line-height: 20px;  font-weight: bold;}
+.psychward-mt-content ul li:last-child{border-bottom:none;}
+.psychward-space-tb {   padding: 20px 0;}
+.psychward-weekly-game-block {  width: 100%;    display: block; position: relative;border: 1px solid #fff;}
+.psychward-wgb-detail { position: absolute; width: 100%;    display: inline-block;  bottom: 0;padding: 15px;}
+.psychward-wgb-img {    width: 100%;    display: block;}
+.psychward-wgb-img img {    width: 100%;    display: inline-block;}
+.psychward-wgb-detail ul {  padding-left: 0;    margin-bottom: 5px; list-style: none; width: 100%; display: inline-block;}
+.psychward-wgb-detail ul li {   float: left;    margin-right: 15px;}
+.psychward-wgb-detail ul li a { color: #fff;    font-size: 14px;    line-height: 16px;  font-weight: normal;    padding: 8px 20px;  border: 1px solid #fff; display: inline-block;}
+.psychward-wgb-detail ul li a:hover, .psychward-wgb-detail ul li a:focus{background: linear-gradient(to right, #400366, #800080 );} 
+.psychward-wgb-detail p {   font-size: 16px;    line-height: 24px;  color: #fff;    font-weight: normal;}
+.psychward-wgb-detail h4 {  font-size: 16px;    line-height: 24px;  color: #fff;    font-weight: normal;}
+.psychward-wgb-bottom-space {   margin-bottom: 26px;}
+.psychward-home-related-block { width: 100%;    display: block; position: relative; border: 1px solid #fff;}
+.psychward-hrb-img {    width: 100%;    display: block;}
+.psychward-hrb-img img {    width: 100%;    display: inline-block;}
+.psychward-home-related-block:hover .psychward-hrb-detail{display: flex; }
+.psychward-hrb-detail { position: absolute; top: 0; left: 0; display: none;    right: 0;   bottom: 0;  width: 100%;  align-items: center;    justify-content: center;    background: rgba(0, 0, 0, 0.56);}
+.psychward-hrb-detail h3 {  width: 100%; display: inline-block; text-align: center; margin: 0;  font-size: 28px;    line-height: 34px;  color: #fff;    font-weight: bold;}
+.psychward-hrb-detail-inner {   width: 100%;    text-align: center; display: inline-block;}
+.psychward-hrb-detail-inner a { color: #fff;    font-size: 14px;    line-height: 16px;  font-weight: normal;    padding: 10px 20px; border: 1px solid #fff; display: inline-block;  background: linear-gradient(to right, #400366, #800080 );   margin-top: 10px;   text-transform: uppercase;
+}
+
+
+.psychward-footer { width: 100%;    display: block; padding-top: 95px;  padding-bottom: 15px;}
+.psychward-footer-block-detail {    width: 100%;    display: block;padding-right: 25px;}
+.psychward-footer-block-detail h3 { margin-top: 0;  font-size: 18px;    line-height: 20px;  color: #53a318; font-weight: 400;   margin-bottom: 20px;}
+.psychward-footer-block-detail p {  font-size: 14px;    line-height: 22px;  color: #fff;    font-weight: 400;}
+.psychward-footer-block-detail ul { padding-left: 0;    margin-bottom: 0;   list-style: none;}
+.psychward-footer-block-detail ul li a {    font-size: 14px;    line-height: 22px;  color: #fff;    font-weight: 400;}
+.psychward-footer-block-detail ul li a:hover, .psychward-footer-block-detail ul li a:focus{color:#53a318;} 
+.psychward-footer-block-detail ul li {  margin-bottom: 3px;}
+.psychward-footer-copyright {   width: 100%;    display: block; text-align: center; margin-top: 90px;}
+.psychward-footer-copyright p { margin-bottom: 0;   color: #fff;    font-size: 13px;    line-height: 15px;  font-weight: 400;}
+
+
+.psychward-Champions-Keep .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.psychward-section6.psychward-space-tb {
+    margin: 20px 0;
+    background: linear-gradient(45deg, #420367, #7b007e);
+}
+
+.psychward-Champions-Keep p {
+    color: white;
+    line-height: 22px;
+    font-size: 15px;
+    font-family: Myriad Pro;
+}
+
+
+.psychward-Champions-Keep h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Trajan Pro;
+}
+.psychward-Champions-Keep input[type="text"]::placeholder{color:#fff;}
+.psychward-Champions-Keep input[type="text"] {
+    background-color: #7e007f;
+    padding: 0 91px 0px 0;
+    border: 1px solid white;
+    color: white;
+    line-height: 40px;
+    /* margin: 0 0 0 10px; */
+    text-indent: 10px;
+}
+.psychward-Champions-Keep input[type="submit"] {
+    padding: 0px 13px 0px 13px;
+    border: 1px solid white;
+    background: linear-gradient(45deg, #74017b, #4b036b);
+    color: white;
+    margin: 0 0 0 10px;
+        line-height: 40px;
+    /* margin: 0 0 0 10px; */
+    text-indent: 10px;
+}
+.psychward-section7.psychward-space-tb {
+   
+    margin: -20px 0;
+    background: linear-gradient(45deg, #3a225c, #3a225c);
+}
+.psychward-section7.psychward-space-tb {
+    /* background-color: #291348; */
+    margin: -20px 0;
+    background: linear-gradient(45deg, #3a225c, #ffffff00);
+    border-bottom: 1px solid #dedede;
+}
+
+.psychward-footer-block-one h1 {
+    color: white;
+    font-family: Trajan Pro;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.psychward-footer-block-one .col-md-3 p {
+    font-family: Trajan Pro;
+    color: white;
+    font-size: 11px;
+}
+
+.follow h1 {
+    font-family: Trajan Pro;
+    font-size: 22px;
+    font-weight: bold;
+}
+.follow a {
+    padding: 0 4px;
+}
+.follow i.fa.fa-instagram {
+    color: white;
+    font-size: 22px;
+}
+
+.follow i.fa.fa-twitter{
+    color: white;
+    font-size: 22px;
+}
+
+.follow  i.fa.fa-envelope-o{
+    color: white;
+    font-size: 22px;
+}
+
+.follow i.fa.fa-facebook-official{
+    color: white;
+    font-size: 22px;
+}
+.psychward-footer-block-one h1.head-links {
+    padding: 0 36px;
+        color: white;
+    font-family: Trajan Pro;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul.main-menu.subm li {
+    list-style-type: none;
+    line-height: 22px;
+}
+
+ul.main-menu.subm a {
+    color: white;
+    font-family: Trajan Pro;
+    font-size: 13px;
+}
+
+ul.info-links li {
+    list-style-type: none;
+    /* font-size: 2px; */
+}
+
+ul.info-links a {
+    color: white;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: Trajan Pro;
+}
+
+.col-md-3 ul.info-links p {
+    font-size: 11px;
+    font-family: Trajan Pro;
+    font-weight: 500;
+}
+.psychward-footer-block-two p {
+    margin: 20px 0px 0 0px;
+    text-align: center;
+    color: white;
+    font-family: Trajan Pro;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.psychward-countdown-start {
+    width: 100%;
+    display: block;
+    background: linear-gradient(#800080, #400366);
+    padding: 30px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.psychward-count-clock-one {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.psychward-count-v {
+    width: 63px;
+    height: 63px;
+    text-align: center;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.psychward-count-vs-border-one {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: white;
+}
+
+.psychward-count-vs-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    height: 100%;
+    border-radius: 100%;
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: bold;
+    color: #7e007f;
+    /* margin: 0 7px; */
+    margin-top: 7px;
+}
+
+.psychward-count-clock {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.psychward-count-timers #clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.count-timers li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+
+.count-timers li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.count-timers {
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 100;
+
+    font-size: 6px;
+
+}
+
+.count-timers li span {
+    display: block;
+    font-size: 4.5rem;
+    padding: 0;
+    background: #fff;
+    display: inline-block;
+    color: #7e007f;
+    font-size: 25px;
+   
+    font-weight: bold;
+    width: 50px;
+}
+.psychward-count-timer div#clock-times {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+}
+
+.psychward-count-timer div#clock-times > div {
+    display: inline-block;
+    padding: 0 0;
+}
+
+.psychward-count-deta {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.psychward-count-images {
+    width: 88px;
+    border-radius: 100%;
+    height: 88px;
+    margin: 0 auto;
+}
+
+.psychward-count-images img {
+    width: 100%;
+    border-radius: 100%;
+}
+.psychward-count-deta i {
+    display: table-cell;
+    font-size: 10px;
+    color: #ffc107;
+}
+
+.psychward-count-deta h3{
+      font-size: 14px;
+    line-height: 27px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+.psychward-count-deta  p{
+        font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.psychward-count-timer div#clock-times > div span {
+    padding: 0;
+    background: #fff;
+    display: inline-block;
+    color: #7e007f;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: bold;
+    width: 50px;
+    /* display: table-row-group; */
+}
+
+.timer-watch {
+    width: 100%;
+    float: left;
+}
+.psychward-Weekly-Live .col-md-8 img {
+    width: 100%;
+    display: inline-block;
+}
+
+.col-md-4 .first-img img {
+    width: 100%;
+    margin-bottom: 28px;
+}
+.col-md-4 .second-img img {
+    width: 100%;
+
+}
+.psychward-countdown .psychward-count-timer {
+    padding: 10px 49px;
+}
+.psychward-count-timer div#clock-times-one {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+}
+
+.psychward-count-timer div#clock-times-one > div {
+    display: inline-block;
+    padding: 0 0;
+}
+.psychward-count-timer div#clock-times-one > div span {
+    padding: 0;
+    background: #fff;
+    display: inline-block;
+    color: #7e007f;
+
+    line-height: 50px;
+    font-weight: bold;
+    width: 50px;
+    /* display: table-row-group; */
+}
+
+
+.psychward-count-timer div#clock-times-two {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+}
+.psychward-footer-block-two {
+    width: 100%;
+    float: left;
+}
+.psychward-count-timer div#clock-times-two > div {
+    display: inline-block;
+    padding: 0 0;
+}
+
+.psychward-count-timer div#clock-times-two > div span {
+    padding: 0;
+    background: #fff;
+    display: inline-block;
+    color: #7e007f;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: bold;
+    width: 50px;
+    /* display: table-row-group; */
+}
+.col-md-3.col-12.col-sm-12 .brand img {
+    width: 100%;
+    margin: 20px 1px;
+}
+
+.read-more a {
+    display: inline-block;
+    margin: 0px;
+    padding: 0 23px;
+    border: 1px solid;
+    line-height: 51px;
+    background: linear-gradient(45deg, #5B0687, #7E0181);
+    color: white;
+    font-size: 20px;
+    font-family: Trajan Pro;
+}
+.read-more {
+    width: 100%;
+    padding: 40px .0 0;
+    margin: 0px;
+}
+
+/**************** Media Query ********************/
+@media screen and (max-width:1200px) and (min-width:992px) {
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 9px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.psychward-countdown .psychward-count-timer {
+    padding: 0 0 0 17px;
+}
+.psychward-match-tabs .tab button {
+    padding: 4px 6px;
+    font-size: 11px;
+}
+.psychward-count-img {
+    width: 128px;
+    height: 128px;
+}
+.psychward-count-images {
+    width: 68px;
+    height: 68px;
+
+}
+.psychward-count-deta i.fa.fa-star {
+    font-size: 6px;
+    font-weight: bold;
+}
+
+.timer-watch .psychward-count-timer div#clock-times {
+    padding: 0 11px;
+}
+
+.psychward-count-v {
+    width: 59px;
+    height: 59px;
+    margin: 5px auto;
+    padding: 18px;
+    margin: 0 0 0 4px;
+}
+.psychward-Champions-Keep h1 {
+    font-size: 19px;
+}
+.psychward-footer-block-one .col-md-3 p {
+    font-family: Trajan Pro;
+    font-size: 12px;
+}
+
+.psychward-footer-block-one h1.head-links {
+    font-family: Trajan Pro;
+    font-size: 19px;
+}
+ul.info-links a {
+    font-size: 10px;
+    line-height: 36px;
+}
+
+.col-md-3 ul.info-links p {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.psychward-Champions-Keep input[type="text"] {
+ 
+    padding: 9px 53px 9px 0;
+    border: 1px solid white;
+    color: white;
+}
+
+}
+
+@media screen and (max-width:992px) and (min-width:768px) {
+
+.psychward-navbar ul li {
+    float: left;
+    padding: 0 4px 0 5px;
+}
+.psychward-header-logo img {
+    width: 100%;
+}
+.psychward-count-img {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto;
+}
+.psychward-count-detail p {
+    font-size: 11px;
+    
+}
+.psychward-count-vs {
+    width: 93px;
+    height: 93px;
+    padding: 0px; 
+}
+
+.psychward-count-title h3 {
+    font-size: 11px;
+    padding: 13px 6px 0 27px;
+}
+
+.psychward-count-detail h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.psychward-section-title h2 {
+    font-size: 27px;
+}
+
+.psychward-match-tabs .tab button {
+    padding: 6px 7px;
+    font-size: 7px;
+}
+.psychward-wgb-detail p {
+    font-size: 11px;
+}
+.col-md-8.jessica {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.col-md-4.karen {
+    flex: 0 0 100%;
+    max-width: 100%;
+       margin-bottom: 20px;
+}
+.psychward-countdown .psychward-count-timer {
+    padding: 10px 37px;
+    text-align: center;
+}
+.psychward-section-subtitle h3 {
+    margin-top: 20px;
+}
+.psychward-Champions-Keep p {
+    font-size: 12px;
+}
+.psychward-Champions-Keep h1 {
+    font-size: 16px;
+}
+.psychward-Champions-Keep input[type="text"] {
+    padding: 9px 13px 9px 0;
+}
+.psychward-Champions-Keep {
+    padding: 19px 0 0px 1px;
+}
+.psychward-slide-detail h2 {
+    font-size: 150px;
+}
+.psychward-slide-img img {
+    left: -30px;
+}
+
+}
+
+@media screen and (max-width:768px) and (min-width:576px) {
+
+
+.psychward-header-logo img {
+    width: 100%;
+}
+.psychward-count-img {
+    width: 88px;
+    height: 88px;
+}
+.psychward-count-detail h3 {
+    font-size: 17px;
+}
+.psychward-count-detail p {
+    font-size: 14px;
+  
+}
+.psychward-count-title h3 {
+    margin-top: 17px;
+        font-size: 15px;
+}
+
+.psychward-countdown .psychward-count-timer {
+    padding: 10px 0px;
+    text-align: center;
+}
+.psychward-section-subtitle h3 {
+    margin-top: 20px;
+}
+
+.psychward-count-timer #clockdiv {
+    font-size: 5px;
+    padding: 0 0px;
+}
+.psychward-section-title h2 {
+    font-size: 28px;
+}
+.psychward-home-related-block {
+    margin-bottom: 20px;
+}
+.psychward-countdown {
+    margin-bottom: 20px;
+}
+
+.col-md-6.col-sm-6.Keep {
+    flex: 0 0 1000%;
+    max-width: 100%;
+}
+.psychward-Champions-Keep input[type="text"] {
+    padding: 9px 193px 9px 0;
+}
+
+.psychward-Weekly-Live .col-md-8 img {
+    margin-bottom: 20px;
+}
+.psychward-weekly-game-block {
+    margin-bottom: 20px;
+}
+.col-md-3.col-sm-3.about {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.psychward-footer-block-one h1.head-links {
+    padding: 0 0;
+}
+
+ul.main-menu.subm {
+    padding: 18px 30px 16px 0;
+}
+
+ul.info-links {
+    padding: 0 0;
+}
+
+
+}
+@media screen and (max-width:576px) and (min-width:320px){
+.psychward-steps-block {
+    width: 100%;  background-size: 100% 100%;}
+}
+@media screen and (min-width:768px){
+.menu_icon{display: none}
+}
+@media screen and (max-width:767.98px) and (min-width:320px){
+.psychward-steps-block {
+    background-size: 100% 100%;width: 100%; 
+}
+ 
+.psychward-home-related-block {
+    margin-bottom: 20px;
+}
+.psychward-countdown {
+    margin-bottom: 20px;
+}
+.psychward-countdown .psychward-count-timer {
+    text-align: center;
+     padding: 0 0px;
+}
+.psychward-section-title h2 {
+    font-size: 28px;
+}
+
+.psychward-count-vs {
+    width: 93px;
+    height: 93px;
+    padding: 0px; 
+}
+
+.psychward-count-title h3 {
+    margin-top: 17px;
+        font-size: 15px;
+}
+.psychward-weekly-game-block {
+    margin-bottom: 20px;
+}
+.psychward-Weekly-Live .col-md-8 img {
+    margin-bottom: 20px;
+}
+
+.psychward-Champions-Keep h1 {
+    margin: 0;
+    font-size: 19px;
+
+}
+.psychward-Champions-Keep p {
+    color: white;
+    line-height: 22px;
+    font-size: 14px;
+ 
+}
+
+.psychward-header-logo img {
+    width: 150px;
+    max-width: 100%;
+}
+
+.psychward-Champions-Keep input[type="text"] {
+    padding: 0px 61px 0px 0;
+    margin-bottom: 20px;
+}
+
+.psychward-footer-block-one h1.head-links {
+    padding: 0 0;
+}
+
+ul.main-menu.subm {
+    padding: 18px 30px 16px 0;
+}
+
+ul.info-links {
+    padding: 0 0;
+}
+.col-md-3.col-sm-3.about {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+ .psychward-header-logo{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.psychward-navbar-btn {
+    display: table-caption;
+    padding: 6px 0;
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 99999999;
+    background: black;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    display: none;
+}
+ .menu_icon{ float: right; }
+.menu_icon i.fa.fa-bars {
+     font-size: 24px;
+    color: white;
+    margin: 11px 0;
+}
+.psychward-navbar ul li {
+    float: left;
+    padding: 0 15px;
+    width: 100%;
+}
+/*.menu_icon{ width: 50px; }
+.menu_icon span{ width: 100%; height: 2px; background: #fff; margin-bottom: 3px; display: block; }
+.psychward-navbar ul li{ width: 100%; }*/
+
+
+.psychward-count-deta i {
+    display: table-cell;
+    font-size: 8px;
+    color: #ffc107;
+}
+.psychward-count-images {
+    width: 65px;
+    height: 65px;
+
+}
+
+.psychward-count-v {
+    margin: 15px auto;
+}
+.psychward-slide-detail h2 {
+    font-size: 155px;
+}
+.psychward-slide-img img {
+    left: -4px;
+}
+.psychward-wgb-detail {
+    padding: 3px;
+}
+.psychward-Champions-Keep input[type="submit"] {
+    margin: 0 0 0 0;
+}
+
+}
+
+/***********close***** Media Query *******************
